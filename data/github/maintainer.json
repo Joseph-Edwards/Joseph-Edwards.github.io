@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Semigroups",
+    "org": "semigroups",
+    "description": "The GAP package Semigroups",
+    "stars": 27,
+    "forks": 38,
+    "languages": [
+      {
+        "name": "GAP",
+        "percent": 93.35076513119714
+      },
+      {
+        "name": "C++",
+        "percent": 4.909518433717541
+      },
+      {
+        "name": "M4",
+        "percent": 1.3941018279773998
+      },
+      {
+        "name": "Python",
+        "percent": 0.2066022253243032
+      },
+      {
+        "name": "Shell",
+        "percent": 0.11301908264179836
+      }
+    ],
+    "url": "https://github.com/semigroups/Semigroups"
+  },
+  {
+    "name": "Digraphs",
+    "org": "digraphs",
+    "description": "The GAP package Digraphs",
+    "stars": 43,
+    "forks": 61,
+    "languages": [
+      {
+        "name": "GAP",
+        "percent": 83.99648235395054
+      },
+      {
+        "name": "C",
+        "percent": 11.576104999682927
+      },
+      {
+        "name": "M4",
+        "percent": 1.6234141683173118
+      },
+      {
+        "name": "OpenEdge ABL",
+        "percent": 1.3108640427936749
+      },
+      {
+        "name": "Jupyter Notebook",
+        "percent": 0.9867034471439176
+      },
+      {
+        "name": "Python",
+        "percent": 0.2867646235969516
+      },
+      {
+        "name": "Makefile",
+        "percent": 0.17471659262077688
+      }
+    ],
+    "url": "https://github.com/digraphs/Digraphs"
+  }
+]

@@ -1,0 +1,22 @@
+@import "variables";
+
+@mixin project_dark {
+  .project-card {
+    background-color: $alt-bg-color-dark;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+}
+
+body.colorscheme-dark {
+  @include project_dark();
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include project_dark();
+  }
+}

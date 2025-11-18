@@ -1,0 +1,723 @@
+@import "variables";
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+}
+
+/* Each card uses the parent's row tracks */
+.project-card {
+  background-color: $alt-bg-color;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.project-name {
+  font-weight: bold;
+}
+
+.project-description {
+  font-size: medium;
+}
+
+.project-stats {
+  display: flex;
+  column-gap: 2rem;
+  font-size: medium;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.project-languages{
+  font-size: small;
+}
+
+/* Stacked language bar */
+.language-bar-stacked {
+  display: flex;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Language labels */
+.language-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+}
+
+.language-list-elements {
+  display: flex;
+  font-size: smaller;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.language-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.language-name {
+  font-weight: bold;
+}
+
+/* Small screen tweaks */
+@media (max-width: 480px) {
+  .language-bar-labels { font-size: 0.8rem; }
+  .language-bar-stacked { height: 8px; }
+}
+
+/* GitHub-style language colors */
+.lang-1c-enterprise { background-color: #814CCC }
+.lang-2-dimensional-array { background-color: #38761D }
+.lang-4d { background-color: #004289 }
+.lang-abap { background-color: #E8274B }
+.lang-abap-cds { background-color: #555e25 }
+.lang-actionscript { background-color: #882B0F }
+.lang-ada { background-color: #02f88c }
+.lang-adblock-filter-list { background-color: #800000 }
+.lang-adobe-font-metrics { background-color: #fa0f00 }
+.lang-agda { background-color: #315665 }
+.lang-ags-script { background-color: #B9D9FF }
+.lang-aidl { background-color: #34EB6B }
+.lang-aiken { background-color: #640ff8 }
+.lang-al { background-color: #3AA2B5 }
+.lang-alloy { background-color: #64C800 }
+.lang-alpine-abuild { background-color: #0D597F }
+.lang-altium-designer { background-color: #A89663 }
+.lang-ampl { background-color: #E6EFBB }
+.lang-angelscript { background-color: #C7D7DC }
+.lang-answer-set-programming { background-color: #A9CC29 }
+.lang-ant-build-system { background-color: #A9157E }
+.lang-antlers { background-color: #ff269e }
+.lang-antlr { background-color: #9DC3FF }
+.lang-apacheconf { background-color: #d12127 }
+.lang-apex { background-color: #1797c0 }
+.lang-api-blueprint { background-color: #2ACCA8 }
+.lang-apl { background-color: #5A8164 }
+.lang-apollo-guidance-computer { background-color: #0B3D91 }
+.lang-applescript { background-color: #101F1F }
+.lang-arc { background-color: #aa2afe }
+.lang-arkts { background-color: #0080ff }
+.lang-asciidoc { background-color: #73a0c5 }
+.lang-asp.net { background-color: #9400ff }
+.lang-aspectj { background-color: #a957b0 }
+.lang-assembly { background-color: #6E4C13 }
+.lang-astro { background-color: #ff5a03 }
+.lang-asymptote { background-color: #ff0000 }
+.lang-ats { background-color: #1ac620 }
+.lang-augeas { background-color: #9CC134 }
+.lang-autohotkey { background-color: #6594b9 }
+.lang-autoit { background-color: #1C3552 }
+.lang-avro-idl { background-color: #0040FF }
+.lang-awk { background-color: #c30e9b }
+.lang-b4x { background-color: #00e4ff }
+.lang-ballerina { background-color: #FF5000 }
+.lang-basic { background-color: #ff0000 }
+.lang-batchfile { background-color: #C1F12E }
+.lang-beef { background-color: #a52f4e }
+.lang-berry { background-color: #15A13C }
+.lang-bibtex { background-color: #778899 }
+.lang-bicep { background-color: #519aba }
+.lang-bikeshed { background-color: #5562ac }
+.lang-bison { background-color: #6A463F }
+.lang-bitbake { background-color: #00bce4 }
+.lang-blade { background-color: #f7523f }
+.lang-blitzbasic { background-color: #00FFAE }
+.lang-blitzmax { background-color: #cd6400 }
+.lang-bluespec { background-color: #12223c }
+.lang-bluespec-bh { background-color: #12223c }
+.lang-boo { background-color: #d4bec1 }
+.lang-boogie { background-color: #c80fa0 }
+.lang-bqn { background-color: #2b7067 }
+.lang-brainfuck { background-color: #2F2530 }
+.lang-brighterscript { background-color: #66AABB }
+.lang-brightscript { background-color: #662D91 }
+.lang-browserslist { background-color: #ffd539 }
+.lang-bru { background-color: #F4AA41 }
+.lang-buildstream { background-color: #006bff }
+.lang-c { background-color: #555555 }
+.lang-cpp { background-color: #f34b7d }
+.lang-c3 { background-color: #2563eb }
+.lang-cabal-config { background-color: #483465 }
+.lang-caddyfile { background-color: #22b638 }
+.lang-cadence { background-color: #00ef8b }
+.lang-cairo { background-color: #ff4a48 }
+.lang-cairo-zero { background-color: #ff4a48 }
+.lang-cameligo { background-color: #3be133 }
+.lang-cangjie { background-color: #00868B }
+.lang-cap-cds { background-color: #0092d1 }
+.lang-carbon { background-color: #222222 }
+.lang-ceylon { background-color: #dfa535 }
+.lang-chapel { background-color: #8dc63f }
+.lang-chuck { background-color: #3f8000 }
+.lang-circom { background-color: #707575 }
+.lang-cirru { background-color: #ccccff }
+.lang-clarion { background-color: #db901e }
+.lang-clarity { background-color: #5546ff }
+.lang-classic-asp { background-color: #6a40fd }
+.lang-clean { background-color: #3F85AF }
+.lang-click { background-color: #E4E6F3 }
+.lang-clips { background-color: #00A300 }
+.lang-clojure { background-color: #db5855 }
+.lang-closure-templates { background-color: #0d948f }
+.lang-cloud-firestore-security-rules { background-color: #FFA000 }
+.lang-clue { background-color: #0009b5 }
+.lang-cmake { background-color: #DA3434 }
+.lang-codeql { background-color: #140f46 }
+.lang-coffeescript { background-color: #244776 }
+.lang-coldfusion { background-color: #ed2cd6 }
+.lang-coldfusion-cfc { background-color: #ed2cd6 }
+.lang-collada { background-color: #F1A42B }
+.lang-common-lisp { background-color: #3fb68b }
+.lang-common-workflow-language { background-color: #B5314C }
+.lang-component-pascal { background-color: #B0CE4E }
+.lang-cooklang { background-color: #E15A29 }
+.lang-crontab { background-color: #ead7ac }
+.lang-crystal { background-color: #000100 }
+.lang-cson { background-color: #244776 }
+.lang-csound { background-color: #1a1a1a }
+.lang-csound-document { background-color: #1a1a1a }
+.lang-csound-score { background-color: #1a1a1a }
+.lang-css { background-color: #663399 }
+.lang-csv { background-color: #237346 }
+.lang-cuda { background-color: #3A4E3A }
+.lang-cue { background-color: #5886E1 }
+.lang-curry { background-color: #531242 }
+.lang-cweb { background-color: #00007a }
+.lang-cylc { background-color: #00b3fd }
+.lang-cypher { background-color: #34c0eb }
+.lang-cython { background-color: #fedf5b }
+.lang-d { background-color: #ba595e }
+.lang-d2 { background-color: #526ee8 }
+.lang-dafny { background-color: #FFEC25 }
+.lang-darcs-patch { background-color: #8eff23 }
+.lang-dart { background-color: #00B4AB }
+.lang-daslang { background-color: #d3d3d3 }
+.lang-dataweave { background-color: #003a52 }
+.lang-debian-package-control-file { background-color: #D70751 }
+.lang-denizenscript { background-color: #FBEE96 }
+.lang-dhall { background-color: #dfafff }
+.lang-directx-3d-file { background-color: #aace60 }
+.lang-dm { background-color: #447265 }
+.lang-dockerfile { background-color: #384d54 }
+.lang-dogescript { background-color: #cca760 }
+.lang-dotenv { background-color: #e5d559 }
+.lang-dune { background-color: #89421e }
+.lang-dylan { background-color: #6c616e }
+.lang-e { background-color: #ccce35 }
+.lang-earthly { background-color: #2af0ff }
+.lang-easybuild { background-color: #069406 }
+.lang-ec { background-color: #913960 }
+.lang-ecere-projects { background-color: #913960 }
+.lang-ecl { background-color: #8a1267 }
+.lang-eclipse { background-color: #001d9d }
+.lang-ecmarkup { background-color: #eb8131 }
+.lang-edge { background-color: #0dffe0 }
+.lang-edgeql { background-color: #31A7FF }
+.lang-editorconfig { background-color: #fff1f2 }
+.lang-eiffel { background-color: #4d6977 }
+.lang-ejs { background-color: #a91e50 }
+.lang-elixir { background-color: #6e4a7e }
+.lang-elm { background-color: #60B5CC }
+.lang-elvish { background-color: #55BB55 }
+.lang-elvish-transcript { background-color: #55BB55 }
+.lang-emacs-lisp { background-color: #c065db }
+.lang-emberscript { background-color: #FFF4F3 }
+.lang-eq { background-color: #a78649 }
+.lang-erlang { background-color: #B83998 }
+.lang-euphoria { background-color: #FF790B }
+.lang-factor { background-color: #636746 }
+.lang-fancy { background-color: #7b9db4 }
+.lang-fantom { background-color: #14253c }
+.lang-faust { background-color: #c37240 }
+.lang-fennel { background-color: #fff3d7 }
+.lang-figlet-font { background-color: #FFDDBB }
+.lang-filebench-wml { background-color: #F6B900 }
+.lang-firrtl { background-color: #2f632f }
+.lang-fish { background-color: #4aae47 }
+.lang-flix { background-color: #d44a45 }
+.lang-fluent { background-color: #ffcc33 }
+.lang-flux { background-color: #88ccff }
+.lang-forth { background-color: #341708 }
+.lang-fortran { background-color: #4d41b1 }
+.lang-fortran-free-form { background-color: #4d41b1 }
+.lang-freebasic { background-color: #141AC9 }
+.lang-freemarker { background-color: #0050b2 }
+.lang-frege { background-color: #00cafe }
+.lang-futhark { background-color: #5f021f }
+.lang-g-code { background-color: #D08CF2 }
+.lang-game-maker-language { background-color: #71b417 }
+.lang-gaml { background-color: #FFC766 }
+.lang-gams { background-color: #f49a22 }
+.lang-gap { background-color: #0000cc }
+.lang-gcc-machine-description { background-color: #FFCFAB }
+.lang-gdscript { background-color: #355570 }
+.lang-gdshader { background-color: #478CBF }
+.lang-gedcom { background-color: #003058 }
+.lang-gemfile.lock { background-color: #701516 }
+.lang-gemini { background-color: #ff6900 }
+.lang-genero-4gl { background-color: #63408e }
+.lang-genero-per { background-color: #d8df39 }
+.lang-genie { background-color: #fb855d }
+.lang-genshi { background-color: #951531 }
+.lang-gentoo-ebuild { background-color: #9400ff }
+.lang-gentoo-eclass { background-color: #9400ff }
+.lang-gerber-image { background-color: #d20b00 }
+.lang-gherkin { background-color: #5B2063 }
+.lang-git-attributes { background-color: #F44D27 }
+.lang-git-commit { background-color: #F44D27 }
+.lang-git-config { background-color: #F44D27 }
+.lang-git-revision-list { background-color: #F44D27 }
+.lang-gleam { background-color: #ffaff3 }
+.lang-glimmer-js { background-color: #F5835F }
+.lang-glimmer-ts { background-color: #3178c6 }
+.lang-glsl { background-color: #5686a5 }
+.lang-glyph { background-color: #c1ac7f }
+.lang-gnuplot { background-color: #f0a9f0 }
+.lang-go { background-color: #00ADD8 }
+.lang-go-checksums { background-color: #00ADD8 }
+.lang-go-module { background-color: #00ADD8 }
+.lang-go-workspace { background-color: #00ADD8 }
+.lang-godot-resource { background-color: #355570 }
+.lang-golo { background-color: #88562A }
+.lang-gosu { background-color: #82937f }
+.lang-grace { background-color: #615f8b }
+.lang-gradle { background-color: #02303a }
+.lang-gradle-kotlin-dsl { background-color: #02303a }
+.lang-grammatical-framework { background-color: #ff0000 }
+.lang-graphql { background-color: #e10098 }
+.lang-graphviz-dot { background-color: #2596be }
+.lang-groovy { background-color: #4298b8 }
+.lang-groovy-server-pages { background-color: #4298b8 }
+.lang-gsc { background-color: #FF6800 }
+.lang-hack { background-color: #878787 }
+.lang-haml { background-color: #ece2a9 }
+.lang-handlebars { background-color: #f7931e }
+.lang-haproxy { background-color: #106da9 }
+.lang-harbour { background-color: #0e60e3 }
+.lang-hare { background-color: #9d7424 }
+.lang-haskell { background-color: #5e5086 }
+.lang-haxe { background-color: #df7900 }
+.lang-hcl { background-color: #844FBA }
+.lang-hip { background-color: #4F3A4F }
+.lang-hiveql { background-color: #dce200 }
+.lang-hlsl { background-color: #aace60 }
+.lang-hocon { background-color: #9ff8ee }
+.lang-holyc { background-color: #ffefaf }
+.lang-hoon { background-color: #00b171 }
+.lang-hosts-file { background-color: #308888 }
+.lang-html { background-color: #e34c26 }
+.lang-html+ecr { background-color: #2e1052 }
+.lang-html+eex { background-color: #6e4a7e }
+.lang-html+erb { background-color: #701516 }
+.lang-html+php { background-color: #4f5d95 }
+.lang-html+razor { background-color: #512be4 }
+.lang-http { background-color: #005C9C }
+.lang-hurl { background-color: #FF0288 }
+.lang-hxml { background-color: #f68712 }
+.lang-hy { background-color: #7790B2 }
+.lang-icalendar { background-color: #ec564c }
+.lang-idl { background-color: #a3522f }
+.lang-idris { background-color: #b30000 }
+.lang-ignore-list { background-color: #000000 }
+.lang-igor-pro { background-color: #0000cc }
+.lang-imagej-macro { background-color: #99AAFF }
+.lang-imba { background-color: #16cec6 }
+.lang-ini { background-color: #d1dbe0 }
+.lang-inno-setup { background-color: #264b99 }
+.lang-io { background-color: #a9188d }
+.lang-ioke { background-color: #078193 }
+.lang-isabelle { background-color: #FEFE00 }
+.lang-isabelle-root { background-color: #FEFE00 }
+.lang-ispc { background-color: #2D68B1 }
+.lang-j { background-color: #9EEDFF }
+.lang-jai { background-color: #ab8b4b }
+.lang-janet { background-color: #0886a5 }
+.lang-jar-manifest { background-color: #b07219 }
+.lang-jasmin { background-color: #d03600 }
+.lang-java { background-color: #b07219 }
+.lang-java-properties { background-color: #2A6277 }
+.lang-java-server-pages { background-color: #2A6277 }
+.lang-java-template-engine { background-color: #2A6277 }
+.lang-javascript { background-color: #f1e05a }
+.lang-javascript+erb { background-color: #f1e05a }
+.lang-jcl { background-color: #d90e09 }
+.lang-jest-snapshot { background-color: #15c213 }
+.lang-jetbrains-mps { background-color: #21D789 }
+.lang-jflex { background-color: #DBCA00 }
+.lang-jinja { background-color: #a52a22 }
+.lang-jison { background-color: #56b3cb }
+.lang-jison-lex { background-color: #56b3cb }
+.lang-jolie { background-color: #843179 }
+.lang-jq { background-color: #c7254e }
+.lang-json { background-color: #292929 }
+.lang-json-with-comments { background-color: #292929 }
+.lang-json5 { background-color: #267CB9 }
+.lang-jsoniq { background-color: #40d47e }
+.lang-jsonld { background-color: #0c479c }
+.lang-jsonnet { background-color: #0064bd }
+.lang-julia { background-color: #a270ba }
+.lang-julia-repl { background-color: #a270ba }
+.lang-jupyter-notebook { background-color: #DA5B0B }
+.lang-just { background-color: #384d54 }
+.lang-kaitai-struct { background-color: #773b37 }
+.lang-kakounescript { background-color: #6f8042 }
+.lang-kdl { background-color: #ffb3b3 }
+.lang-kerboscript { background-color: #41adf0 }
+.lang-kicad-layout { background-color: #2f4aab }
+.lang-kicad-legacy-layout { background-color: #2f4aab }
+.lang-kicad-schematic { background-color: #2f4aab }
+.lang-koka { background-color: #215166 }
+.lang-kolmafia-ash { background-color: #B9D9B9 }
+.lang-kotlin { background-color: #A97BFF }
+.lang-krl { background-color: #28430A }
+.lang-kvlang { background-color: #1da6e0 }
+.lang-labview { background-color: #fede06 }
+.lang-lark { background-color: #2980B9 }
+.lang-lasso { background-color: #999999 }
+.lang-latte { background-color: #f2a542 }
+.lang-leo { background-color: #C4FFC2 }
+.lang-less { background-color: #1d365d }
+.lang-lex { background-color: #DBCA00 }
+.lang-lfe { background-color: #4C3023 }
+.lang-ligolang { background-color: #0e74ff }
+.lang-lilypond { background-color: #9ccc7c }
+.lang-liquid { background-color: #67b8de }
+.lang-literate-agda { background-color: #315665 }
+.lang-literate-coffeescript { background-color: #244776 }
+.lang-literate-haskell { background-color: #5e5086 }
+.lang-livecode-script { background-color: #0c5ba5 }
+.lang-livescript { background-color: #499886 }
+.lang-llvm { background-color: #185619 }
+.lang-logtalk { background-color: #295b9a }
+.lang-lolcode { background-color: #cc9900 }
+.lang-lookml { background-color: #652B81 }
+.lang-lsl { background-color: #3d9970 }
+.lang-lua { background-color: #000080 }
+.lang-luau { background-color: #00A2FF }
+.lang-m3u { background-color: #179C7D }
+.lang-m4 { background-color: #ccc }
+.lang-macaulay2 { background-color: #d8ffff }
+.lang-makefile { background-color: #427819 }
+.lang-mako { background-color: #7e858d }
+.lang-markdown { background-color: #083fa1 }
+.lang-marko { background-color: #42bff2 }
+.lang-mask { background-color: #f97732 }
+.lang-matlab { background-color: #e16737 }
+.lang-max { background-color: #c4a79c }
+.lang-maxscript { background-color: #00a6a6 }
+.lang-mcfunction { background-color: #E22837 }
+.lang-mdsvex { background-color: #5f9ea0 }
+.lang-mdx { background-color: #fcb32c }
+.lang-mercury { background-color: #ff2b2b }
+.lang-mermaid { background-color: #ff3670 }
+.lang-meson { background-color: #007800 }
+.lang-metal { background-color: #8f14e9 }
+.lang-miniyaml { background-color: #ff1111 }
+.lang-minizinc { background-color: #06a9e6 }
+.lang-mint { background-color: #02b046 }
+.lang-mirah { background-color: #c7a938 }
+.lang-mirc-script { background-color: #3d57c3 }
+.lang-mlir { background-color: #5EC8DB }
+.lang-modelica { background-color: #de1d31 }
+.lang-modula-2 { background-color: #10253f }
+.lang-modula-3 { background-color: #223388 }
+.lang-mojo { background-color: #ff4c1f }
+.lang-monkey-c { background-color: #8D6747 }
+.lang-moonbit { background-color: #b92381 }
+.lang-moonscript { background-color: #ff4585 }
+.lang-motoko { background-color: #fbb03b }
+.lang-motorola-68k-assembly { background-color: #005daa }
+.lang-move { background-color: #4a137a }
+.lang-mql4 { background-color: #62A8D6 }
+.lang-mql5 { background-color: #4A76B8 }
+.lang-mtml { background-color: #b7e1f4 }
+.lang-mupad { background-color: #244963 }
+.lang-mustache { background-color: #724b3b }
+.lang-nanorc { background-color: #2d004d }
+.lang-nasal { background-color: #1d2c4e }
+.lang-ncl { background-color: #28431f }
+.lang-nearley { background-color: #990000 }
+.lang-nemerle { background-color: #3d3c6e }
+.lang-nesc { background-color: #94B0C7 }
+.lang-netlinx { background-color: #0aa0ff }
+.lang-netlinx+erb { background-color: #747faa }
+.lang-netlogo { background-color: #ff6375 }
+.lang-newlisp { background-color: #87AED7 }
+.lang-nextflow { background-color: #3ac486 }
+.lang-nginx { background-color: #009639 }
+.lang-nickel { background-color: #E0C3FC }
+.lang-nim { background-color: #ffc200 }
+.lang-nit { background-color: #009917 }
+.lang-nix { background-color: #7e7eff }
+.lang-nmodl { background-color: #00356B }
+.lang-noir { background-color: #2f1f49 }
+.lang-npm-config { background-color: #cb3837 }
+.lang-nu { background-color: #c9df40 }
+.lang-numpy { background-color: #9C8AF9 }
+.lang-nunjucks { background-color: #3d8137 }
+.lang-nushell { background-color: #4E9906 }
+.lang-nwscript { background-color: #111522 }
+.lang-oasv2-json { background-color: #85ea2d }
+.lang-oasv2-yaml { background-color: #85ea2d }
+.lang-oasv3-json { background-color: #85ea2d }
+.lang-oasv3-yaml { background-color: #85ea2d }
+.lang-objective-c { background-color: #438eff }
+.lang-objective-cpp { background-color: #6866fb }
+.lang-objective-j { background-color: #ff0c5a }
+.lang-objectscript { background-color: #424893 }
+.lang-ocaml { background-color: #ef7a08 }
+.lang-odin { background-color: #60AFFE }
+.lang-omgrofl { background-color: #cabbff }
+.lang-ooc { background-color: #b0b77e }
+.lang-opal { background-color: #f7ede0 }
+.lang-open-policy-agent { background-color: #7d9199 }
+.lang-openapi-specification-v2 { background-color: #85ea2d }
+.lang-openapi-specification-v3 { background-color: #85ea2d }
+.lang-opencl { background-color: #ed2e2d }
+.lang-openedge-abl { background-color: #5ce600 }
+.lang-openqasm { background-color: #AA70FF }
+.lang-openscad { background-color: #e5cd45 }
+.lang-option-list { background-color: #476732 }
+.lang-org { background-color: #77aa99 }
+.lang-overpassql { background-color: #cce2aa }
+.lang-oxygene { background-color: #cdd0e3 }
+.lang-oz { background-color: #fab738 }
+.lang-p4 { background-color: #7055b5 }
+.lang-pact { background-color: #F7A8B8 }
+.lang-pan { background-color: #cc0000 }
+.lang-papyrus { background-color: #6600cc }
+.lang-parrot { background-color: #f3ca0a }
+.lang-pascal { background-color: #E3F171 }
+.lang-pawn { background-color: #dbb284 }
+.lang-pddl { background-color: #0d00ff }
+.lang-peg.js { background-color: #234d6b }
+.lang-pep8 { background-color: #C76F5B }
+.lang-perl { background-color: #0298c3 }
+.lang-php { background-color: #4F5D95 }
+.lang-picolisp { background-color: #6067af }
+.lang-piglatin { background-color: #fcd7de }
+.lang-pike { background-color: #005390 }
+.lang-pip-requirements { background-color: #FFD343 }
+.lang-pkl { background-color: #6b9543 }
+.lang-plantuml { background-color: #fbbd16 }
+.lang-plpgsql { background-color: #336790 }
+.lang-plsql { background-color: #dad8d8 }
+.lang-pogoscript { background-color: #d80074 }
+.lang-polar { background-color: #ae81ff }
+.lang-portugol { background-color: #f8bd00 }
+.lang-postcss { background-color: #dc3a0c }
+.lang-postscript { background-color: #da291c }
+.lang-pov-ray-sdl { background-color: #6bac65 }
+.lang-powerbuilder { background-color: #8f0f8d }
+.lang-powershell { background-color: #012456 }
+.lang-praat { background-color: #c8506d }
+.lang-prisma { background-color: #0c344b }
+.lang-processing { background-color: #0096D8 }
+.lang-procfile { background-color: #3B2F63 }
+.lang-prolog { background-color: #74283c }
+.lang-promela { background-color: #de0000 }
+.lang-propeller-spin { background-color: #7fa2a7 }
+.lang-pug { background-color: #a86454 }
+.lang-puppet { background-color: #302B6D }
+.lang-purebasic { background-color: #5a6986 }
+.lang-purescript { background-color: #1D222D }
+.lang-pyret { background-color: #ee1e10 }
+.lang-python { background-color: #3572A5 }
+.lang-python-console { background-color: #3572A5 }
+.lang-python-traceback { background-color: #3572A5 }
+.lang-q { background-color: #0040cd }
+.lang-qml { background-color: #44a51c }
+.lang-qt-script { background-color: #00b841 }
+.lang-quake { background-color: #882233 }
+.lang-quakec { background-color: #975777 }
+.lang-quickbasic { background-color: #008080 }
+.lang-r { background-color: #198CE7 }
+.lang-racket { background-color: #3c5caa }
+.lang-ragel { background-color: #9d5200 }
+.lang-raku { background-color: #0000fb }
+.lang-raml { background-color: #77d9fb }
+.lang-rascal { background-color: #fffaa0 }
+.lang-rbs { background-color: #701516 }
+.lang-rdoc { background-color: #701516 }
+.lang-reason { background-color: #ff5847 }
+.lang-reasonligo { background-color: #ff5847 }
+.lang-rebol { background-color: #358a5b }
+.lang-record-jar { background-color: #0673ba }
+.lang-red { background-color: #f50000 }
+.lang-regular-expression { background-color: #009a00 }
+.lang-rescript { background-color: #ed5051 }
+.lang-restructuredtext { background-color: #141414 }
+.lang-rexx { background-color: #d90e09 }
+.lang-rez { background-color: #FFDAB3 }
+.lang-ring { background-color: #2D54CB }
+.lang-riot { background-color: #A71E49 }
+.lang-rmarkdown { background-color: #198ce7 }
+.lang-robotframework { background-color: #00c0b5 }
+.lang-roc { background-color: #7c38f5 }
+.lang-rocq-prover { background-color: #d0b68c }
+.lang-roff { background-color: #ecdebe }
+.lang-roff-manpage { background-color: #ecdebe }
+.lang-ron { background-color: #a62c00 }
+.lang-ros-interface { background-color: #22314e }
+.lang-rouge { background-color: #cc0088 }
+.lang-routeros-script { background-color: #DE3941 }
+.lang-rpgle { background-color: #2BDE21 }
+.lang-ruby { background-color: #701516 }
+.lang-runoff { background-color: #665a4e }
+.lang-rust { background-color: #dea584 }
+.lang-sail { background-color: #259dd5 }
+.lang-saltstack { background-color: #646464 }
+.lang-sas { background-color: #B34936 }
+.lang-sass { background-color: #a53b70 }
+.lang-scala { background-color: #c22d40 }
+.lang-scaml { background-color: #bd181a }
+.lang-scenic { background-color: #fdc700 }
+.lang-scheme { background-color: #1e4aec }
+.lang-scilab { background-color: #ca0f21 }
+.lang-scss { background-color: #c6538c }
+.lang-sed { background-color: #64b970 }
+.lang-self { background-color: #0579aa }
+.lang-shaderlab { background-color: #222c37 }
+.lang-shell { background-color: #89e051 }
+.lang-shellcheck-config { background-color: #cecfcb }
+.lang-shen { background-color: #120F14 }
+.lang-simple-file-verification { background-color: #C9BFED }
+.lang-singularity { background-color: #64E6AD }
+.lang-slang { background-color: #1fbec9 }
+.lang-slash { background-color: #007eff }
+.lang-slice { background-color: #003fa2 }
+.lang-slim { background-color: #2b2b2b }
+.lang-slint { background-color: #2379F4 }
+.lang-smalltalk { background-color: #596706 }
+.lang-smarty { background-color: #f0c040 }
+.lang-smithy { background-color: #c44536 }
+.lang-smpl { background-color: #c94949 }
+.lang-snakemake { background-color: #419179 }
+.lang-solidity { background-color: #AA6746 }
+.lang-sourcepawn { background-color: #f69e1d }
+.lang-sparql { background-color: #0C4597 }
+.lang-sqf { background-color: #3F3F3F }
+.lang-sql { background-color: #e38c00 }
+.lang-sqlpl { background-color: #e38c00 }
+.lang-squirrel { background-color: #800000 }
+.lang-srecode-template { background-color: #348a34 }
+.lang-stan { background-color: #b2011d }
+.lang-standard-ml { background-color: #dc566d }
+.lang-starlark { background-color: #76d275 }
+.lang-stata { background-color: #1a5f91 }
+.lang-stl { background-color: #373b5e }
+.lang-stringtemplate { background-color: #3fb34f }
+.lang-stylus { background-color: #ff6347 }
+.lang-subrip-text { background-color: #9e0101 }
+.lang-sugarss { background-color: #2fcc9f }
+.lang-supercollider { background-color: #46390b }
+.lang-survex-data { background-color: #ffcc99 }
+.lang-svelte { background-color: #ff3e00 }
+.lang-svg { background-color: #ff9900 }
+.lang-sway { background-color: #00F58C }
+.lang-sweave { background-color: #198ce7 }
+.lang-swift { background-color: #F05138 }
+.lang-systemverilog { background-color: #DAE1C2 }
+.lang-tact { background-color: #48b5ff }
+.lang-talon { background-color: #333333 }
+.lang-tcl { background-color: #e4cc98 }
+.lang-teal { background-color: #00B1BC }
+.lang-templ { background-color: #66D0DD }
+.lang-terra { background-color: #00004c }
+.lang-terraform-template { background-color: #7b42bb }
+.lang-tex { background-color: #3D6117 }
+.lang-textgrid { background-color: #c8506d }
+.lang-textile { background-color: #ffe7ac }
+.lang-textmate-properties { background-color: #df66e4 }
+.lang-thrift { background-color: #D12127 }
+.lang-ti-program { background-color: #A0AA87 }
+.lang-tl-verilog { background-color: #C40023 }
+.lang-tla { background-color: #4b0079 }
+.lang-toit { background-color: #c2c9fb }
+.lang-toml { background-color: #9c4221 }
+.lang-tor-config { background-color: #59316b }
+.lang-tree-sitter-query { background-color: #8ea64c }
+.lang-tsql { background-color: #e38c00 }
+.lang-tsv { background-color: #237346 }
+.lang-tsx { background-color: #3178c6 }
+.lang-turing { background-color: #cf142b }
+.lang-twig { background-color: #c1d026 }
+.lang-txl { background-color: #0178b8 }
+.lang-typescript { background-color: #3178c6 }
+.lang-typespec { background-color: #4A3665 }
+.lang-typst { background-color: #239dad }
+.lang-unified-parallel-c { background-color: #4e3617 }
+.lang-unity3d-asset { background-color: #222c37 }
+.lang-uno { background-color: #9933cc }
+.lang-unrealscript { background-color: #a54c4d }
+.lang-untyped-plutus-core { background-color: #36adbd }
+.lang-urweb { background-color: #ccccee }
+.lang-v { background-color: #4f87c4 }
+.lang-vala { background-color: #a56de2 }
+.lang-valve-data-format { background-color: #f26025 }
+.lang-vba { background-color: #867db1 }
+.lang-vbscript { background-color: #15dcdc }
+.lang-vcard { background-color: #ee2647 }
+.lang-vcl { background-color: #148AA8 }
+.lang-velocity-template-language { background-color: #507cff }
+.lang-vento { background-color: #ff0080 }
+.lang-verilog { background-color: #b2b7f8 }
+.lang-vhdl { background-color: #adb2cb }
+.lang-vim-help-file { background-color: #199f4b }
+.lang-vim-script { background-color: #199f4b }
+.lang-vim-snippet { background-color: #199f4b }
+.lang-volt { background-color: #1F1F1F }
+.lang-vue { background-color: #41b883 }
+.lang-vyper { background-color: #9F4CF2 }
+.lang-wdl { background-color: #42f1f4 }
+.lang-web-ontology-language { background-color: #5b70bd }
+.lang-webassembly { background-color: #04133b }
+.lang-webassembly-interface-type { background-color: #6250e7 }
+.lang-wgsl { background-color: #1a5e9a }
+.lang-whiley { background-color: #d5c397 }
+.lang-wikitext { background-color: #fc5757 }
+.lang-windows-registry-entries { background-color: #52d5ff }
+.lang-wisp { background-color: #7582D1 }
+.lang-witcher-script { background-color: #ff0000 }
+.lang-wolfram-language { background-color: #dd1100 }
+.lang-wollok { background-color: #a23738 }
+.lang-world-of-warcraft-addon-data { background-color: #f7e43f }
+.lang-wren { background-color: #383838 }
+.lang-x10 { background-color: #4B6BEF }
+.lang-xbase { background-color: #403a40 }
+.lang-xc { background-color: #99DA07 }
+.lang-xmake { background-color: #22a079 }
+.lang-xml { background-color: #0060ac }
+.lang-xml-property-list { background-color: #0060ac }
+.lang-xojo { background-color: #81bd41 }
+.lang-xonsh { background-color: #285EEF }
+.lang-xquery { background-color: #5232e7 }
+.lang-xslt { background-color: #EB8CEB }
+.lang-xtend { background-color: #24255d }
+.lang-yacc { background-color: #4B6C4B }
+.lang-yaml { background-color: #cb171e }
+.lang-yara { background-color: #220000 }
+.lang-yasnippet { background-color: #32AB90 }
+.lang-yul { background-color: #794932 }
+.lang-zap { background-color: #0d665e }
+.lang-zenscript { background-color: #00BCD1 }
+.lang-zephir { background-color: #118f9e }
+.lang-zig { background-color: #ec915c }
+.lang-zil { background-color: #dc75e5 }
+.lang-zimpl { background-color: #d67711 }
+.lang-zmodel { background-color: #ff7100 }
+.lang-other { background-color: #ededed; }
+

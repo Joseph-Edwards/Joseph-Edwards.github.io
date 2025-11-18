@@ -1,0 +1,58 @@
+<div class="project-card">
+  <!-- Card header -->
+  <div class="project-card-header">
+    <a href="{{ .url }}">
+      <i class="fa fa-code"></i>
+      <span class="project-org">{{ .org }}/</span
+      ><span class="project-name">{{ .name }}</span>
+    </a>
+  </div>
+
+  <!-- Project description -->
+  <div class="project-description">
+    {{ if .description }}
+    <span>{{ .description }}</span>
+    {{ else }}
+    <span>No description.</span>
+    {{ end }}
+  </div>
+  <!-- Project stats -->
+  <div class="project-stats">
+    <span class="stat-item">
+      <i class="fa fa-regular fa-star"></i>{{ .stars }}
+    </span>
+    <span class="stat-item">
+      <i class="fa fa-solid fa-code-fork"></i> {{ .forks }}
+    </span>
+  </div>
+
+  <div class="project-languages">
+    <!-- Stacked language bar -->
+    {{ if .languages }}
+    <div class="language-bar-stacked">
+      {{ range .languages }} {{ $class := printf "lang-%s" (lower .name |
+      urlize)}} {{ $class := replace $class "++" "pp" }}
+      <span
+        class="language-segment {{ $class }}"
+        style="width: {{ .percent }}%;"
+      ></span>
+      {{ end }}
+    </div>
+
+    <!-- Language labels with colored circles -->
+    <div class="language-list">
+      {{ range .languages }} {{ $class := printf "lang-%s" (lower .name |
+      urlize) }} {{ $class := replace $class "++" "pp" }}
+      <span class="language-list-elements">
+        <span class="language-circle {{ $class }}"></span
+        ><span class="language-name">{{ .name }}</span
+        ><span>{{ printf "%.1f" .percent }}%</span>
+      </span>
+      {{ end }}
+    </div>
+    {{ else }}
+    <span>No languages</span>
+    <span></span>
+    {{ end }}
+  </div>
+</div>

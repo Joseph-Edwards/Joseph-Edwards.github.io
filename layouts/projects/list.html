@@ -1,0 +1,25 @@
+{{ define "title" }} {{ title (i18n (lower .Title)) | default .Title }} · {{
+.Site.Title }} {{ end }} {{ define "content" }}
+<section class="container list">
+  <header>
+    <h1 class="title">
+      <a class="title-link" href="{{ .Permalink | safeURL }}">
+        {{ title (i18n (lower .Title)) | default .Title }}
+      </a>
+    </h1>
+  </header>
+  {{ .Content }}
+  <h2>Author</h2>
+  <div class="project-grid">
+    {{ range .Site.Data.github.author }} {{ partial "project-card.html" . }} {{ end }}
+  </div>
+  <h2>Maintainer</h2>
+  <div class="project-grid">
+    {{ range .Site.Data.github.maintainer }} {{ partial "project-card.html" . }} {{ end }}
+  </div>
+  <h2>Contributor</h2>
+  <div class="project-grid">
+    {{ range .Site.Data.github.contributor }} {{ partial "project-card.html" . }} {{ end }}
+  </div>
+</section>
+{{ end }}

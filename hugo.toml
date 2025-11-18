@@ -1,4 +1,4 @@
-baseURL                = "http://www.joseph-edwards.github.io"
+baseURL                = "https://www.joseph-edwards.github.io"
 defaultContentLanguage = "en"
 enableEmoji            = true
 languageCode           = "en"
@@ -85,3 +85,6 @@ weight = 3
 name   = "Teaching"
 url    = "teaching/"
 weight = 4
+
+[caches.images]
+dir = ':cacheDir/images'

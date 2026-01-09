@@ -9,6 +9,7 @@ activities I have undertaken, grouped by academic year.
 ## 2025/2026
 
 - Teaching assistant for the [Mathematical Software](https://www.st-andrews.ac.uk/education/vip/projects/mathematical-software/) Vertically Integrated Project.
+- Lead demonstrator for [Introduction to Mathematical Computing](https://www.st-andrews.ac.uk/subjects/modules/catalogue/?meta_modulecode=MT3510).
 
 # 2024/2025
 

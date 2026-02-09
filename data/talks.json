@@ -1,17 +1,5 @@
 [
-  {
-    "title": "The Mathematics of Games",
-    "class": "invited",
-    "type": "Lecture",
-    "event": "Summer Academic Experience Course",
-    "date": "2025-07-15",
-    "location": "University of St Andrews",
-    "abstract": [
-      "What is a game? It's difficult to fully answer this question without getting too philosophical, but a good approximation for a large number of games might be \"something where players take turns making moves according to a list of rules to try and achieve a winning condition\". Using this as our starting point, it is possible to represent games mathematically in such a way that lets us systematically interrogate different ways of playing.",
-      "In this session, we will explore how to encode games mathematically, and how we can use this to develop strategies to maximise your chances of winning."
-    ]
-  },
-  {
+    {
     "title": "Irreducible diagrams in the Jones monoid",
     "class": "invited",
     "type": "Seminar",
@@ -25,11 +13,23 @@
     ]
   },
   {
-    "title": "Infinitely presented finite semigroups",
-    "class": "other",
+    "title": "The Mathematics of Games",
+    "class": "invited",
+    "type": "Lecture",
+    "event": "Summer Academic Experience Course",
+    "date": "2025-07-15",
+    "location": "University of St Andrews",
+    "abstract": [
+      "What is a game? It's difficult to fully answer this question without getting too philosophical, but a good approximation for a large number of games might be \"something where players take turns making moves according to a list of rules to try and achieve a winning condition\". Using this as our starting point, it is possible to represent games mathematically in such a way that lets us systematically interrogate different ways of playing.",
+      "In this session, we will explore how to encode games mathematically, and how we can use this to develop strategies to maximise your chances of winning."
+    ]
+  },
+    {
+    "title": "Finite presentations for quotients of plactic-like monoids",
+    "class": "invited",
     "type": "Seminar",
-    "event": "Centre for Interdisciplinary Research in Computational Algebra Seminar",
-    "date": "2025-03-27",
+    "event": "North British Semigroups and Applications Network Meeting",
+    "date": "2025-06-13",
     "location": "University of St Andrews",
     "abstract": [
       "One way to obtain normal forms for elements of a finitely presented monoid is to identify words with combinatorial objects. Perhaps the most well-known example of this appears in the Plactic monoid, where words are identified with Young tableaux according to the Robinson-Schensted insertion algorithm.",
@@ -37,11 +37,11 @@
     ]
   },
   {
-    "title": "Finite presentations for quotients of plactic-like monoids",
-    "class": "invited",
+    "title": "Infinitely presented finite semigroups",
+    "class": "other",
     "type": "Seminar",
-    "event": "North British Semigroups and Applications Network Meeting",
-    "date": "2025-06-13",
+    "event": "Centre for Interdisciplinary Research in Computational Algebra Seminar",
+    "date": "2025-03-27",
     "location": "University of St Andrews",
     "abstract": [
       "One way to obtain normal forms for elements of a finitely presented monoid is to identify words with combinatorial objects. Perhaps the most well-known example of this appears in the Plactic monoid, where words are identified with Young tableaux according to the Robinson-Schensted insertion algorithm.",

@@ -1,5 +1,6 @@
 ---
 title: "Open-source Software Projects"
+linkTitle: "Software"
 ---
 
 > It isn't much good having anything exciting, if you can't share it with somebody.

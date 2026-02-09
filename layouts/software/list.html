@@ -1,5 +1,7 @@
-{{ define "title" }} {{ title (i18n (lower .Title)) | default .Title }} · {{
-.Site.Title }} {{ end }} {{ define "content" }}
+{{ define "title" }}
+  {{ .LinkTitle }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
 <section class="container list">
   <header>
     <h1 class="title">

@@ -3,32 +3,32 @@
     "name": "libsemigroups",
     "org": "libsemigroups",
     "description": "C++ library for semigroups and monoids",
-    "stars": 62,
+    "stars": 64,
     "forks": 34,
     "languages": [
       {
         "name": "C++",
-        "percent": 95.530599671777
+        "percent": 95.48200051599846
       },
       {
         "name": "M4",
-        "percent": 1.3896294853202358
+        "percent": 1.3475540084951099
       },
       {
         "name": "Python",
-        "percent": 1.1933982557659455
+        "percent": 1.3066079968361504
       },
       {
         "name": "Makefile",
-        "percent": 1.1554563926091321
+        "percent": 1.1505055685625833
       },
       {
         "name": "Shell",
-        "percent": 0.364569381546231
+        "percent": 0.35807741849850416
       },
       {
         "name": "GAP",
-        "percent": 0.35253323166985345
+        "percent": 0.3418591606488335
       }
     ],
     "url": "https://github.com/libsemigroups/libsemigroups"
@@ -37,28 +37,28 @@
     "name": "libsemigroups_pybind11",
     "org": "libsemigroups",
     "description": "Python bindings for the libsemigroups C++ library for semigroups and monoids",
-    "stars": 6,
+    "stars": 9,
     "forks": 10,
     "languages": [
       {
         "name": "C++",
-        "percent": 63.95729532427519
+        "percent": 64.39062016107796
       },
       {
         "name": "Python",
-        "percent": 35.36702149806393
+        "percent": 34.935850179086394
       },
       {
         "name": "Shell",
-        "percent": 0.499007674905972
+        "percent": 0.509605894044468
       },
       {
         "name": "Vim Script",
-        "percent": 0.10554730545570622
+        "percent": 0.0979293196262332
       },
       {
         "name": "Makefile",
-        "percent": 0.0711281972992103
+        "percent": 0.06599444616495007
       }
     ],
     "url": "https://github.com/libsemigroups/libsemigroups_pybind11"

@@ -3,7 +3,7 @@
     "name": "Semigroups",
     "org": "semigroups",
     "description": "The GAP package Semigroups",
-    "stars": 27,
+    "stars": 29,
     "forks": 38,
     "languages": [
       {
@@ -33,36 +33,36 @@
     "name": "Digraphs",
     "org": "digraphs",
     "description": "The GAP package Digraphs",
-    "stars": 43,
+    "stars": 44,
     "forks": 61,
     "languages": [
       {
         "name": "GAP",
-        "percent": 83.99648235395054
+        "percent": 84.05077891015313
       },
       {
         "name": "C",
-        "percent": 11.576104999682927
+        "percent": 11.536829719733614
       },
       {
         "name": "M4",
-        "percent": 1.6234141683173118
+        "percent": 1.6179062668309232
       },
       {
-        "name": "OpenEdge ABL",
-        "percent": 1.3108640427936749
+        "name": "Gnuplot",
+        "percent": 1.306416557887688
       },
       {
         "name": "Jupyter Notebook",
-        "percent": 0.9867034471439176
+        "percent": 0.9833557706918994
       },
       {
         "name": "Python",
-        "percent": 0.2867646235969516
+        "percent": 0.2857916917799339
       },
       {
         "name": "Makefile",
-        "percent": 0.17471659262077688
+        "percent": 0.17412381611372557
       }
     ],
     "url": "https://github.com/digraphs/Digraphs"

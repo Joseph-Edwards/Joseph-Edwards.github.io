@@ -13,15 +13,15 @@ MAINTAINER_REPOS = [
 
 CONTRIBUTOR_REPOS = [
     "gap-system/gap",
+    "libsemigroups/Semigroups.jl",
+    "libsemigroups/HPCombi",
+    "github/docs",
     "gap-actions/run-pkg-tests",
     "graph-algorithms/edge-addition-planarity-suite",
-    "github/docs",
-    "libsemigroups/HPCombi",
 ]
 
 
 def process_languages(language_to_bytes: dict) -> list:
-    print(language_to_bytes)
     total_bytes = sum(language_to_bytes.values())
 
     # Convert byte count to percentage
@@ -44,6 +44,7 @@ def process_languages(language_to_bytes: dict) -> list:
 def process_repos(repos: list, output_file_name: str) -> None:
     out = []
     for repo in repos:
+        print(f"Fetching {repo} . . . ", end="")
         # fetch repo info
         repo_url = f"https://api.github.com/repos/{repo}"
         r = requests.get(repo_url)
@@ -67,6 +68,7 @@ def process_repos(repos: list, output_file_name: str) -> None:
                 "url": data.get("html_url"),
             }
         )
+        print("done")
 
     with open(output_file_name, "w") as f:
         json.dump(out, f, indent=2)

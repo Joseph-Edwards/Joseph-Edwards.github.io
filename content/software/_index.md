@@ -7,7 +7,6 @@ linkTitle: "Software"
 >
 > —<cite>Winnie-the-Pooh</cite>
 
-I am very ardent proponent of open-source software and, where possible, try my
-best to contribute to the open-source community. On this page, you will find
-links to various projects that I have authored, maintain, or have contributed
-to.
+I am a big fan of open-source software and, where possible, try my best to
+contribute to the open-source community. On this page, you will find links to
+various projects that I have authored, maintain, or have contributed to.

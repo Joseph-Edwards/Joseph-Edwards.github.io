@@ -1,0 +1,26 @@
+{{ $formatted_coauthors := slice }}
+{{ range .coauthors }}
+  {{ $coauthor := "" }}
+  {{ if .url  }}
+    {{ $coauthor = printf "<a href=\"%s\">%s</a>" .url .name }}
+  {{ else }}
+    {{ $coauthor = .name }}
+  {{ end }}
+  {{ $formatted_coauthors = $formatted_coauthors | append $coauthor }}
+{{ end }}
+
+<div class="paper">
+  <dt>"{{ .title }}"</dt>
+  <dd>
+    <div>With {{ delimit $formatted_coauthors ", " " and " | safeHTML }}.</div>
+    <div>Preprint: <a href="{{ .resource.url | safeURL}}">{{ .resource.title }}</a></div>
+    <div>
+      <details>
+        <summary>Abstract</summary>
+        {{ range .abstract }}
+        <p>{{ . }}</p>
+        {{ end }}
+      </details>
+    </div>
+  </dd>
+</div>

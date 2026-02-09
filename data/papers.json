@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Counting finite semirings",
+    "class": "Preprint",
+    "date": "2025-12",
+    "coauthors": [
+      { "name": "J. D. Mitchell", "url": "https://jdbm.me/" },
+      { "name": "P. Ragavan", "url": "" }
+    ],
+    "resource": {
+      "title": "arXiv:2507.03709",
+      "url": "https://arxiv.org/abs/2507.03709"
+    },
+    "abstract": [
+      "In this short note we count the finite semirings up to isomorphism, and up to isomorphism and anti-isomorphism for some small values of; for which we utilise the existing library of small semigroups in the GAP package Smallsemi."
+    ]
+  }
+]

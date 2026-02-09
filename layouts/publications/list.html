@@ -1,0 +1,23 @@
+{{ define "title" }}
+  {{ .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+<section class="container list">
+  <header>
+    <h1 class="title">
+      <a class="title-link" href="{{ .Permalink | safeURL }}">
+        {{ .Title }}
+      </a>
+    </h1>
+  </header>
+  {{ .Content }}
+  <h2>Preprint</h2>
+  <div>
+    <dl>
+      {{ range sort (where .Site.Data.papers "class" "Preprint") "date" "desc"}}
+        {{ partial "paper.html" . }}
+      {{ end }}
+    </dl>
+  </div>
+</section>
+{{ end }}

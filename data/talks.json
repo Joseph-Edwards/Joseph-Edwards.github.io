@@ -1,0 +1,63 @@
+[
+  {
+    "title": "The Mathematics of Games",
+    "class": "invited",
+    "type": "Lecture",
+    "event": "Summer Academic Experience Course",
+    "date": "2025-07-15",
+    "location": "University of St Andrews",
+    "abstract": [
+      "What is a game? It's difficult to fully answer this question without getting too philosophical, but a good approximation for a large number of games might be \"something where players take turns making moves according to a list of rules to try and achieve a winning condition\". Using this as our starting point, it is possible to represent games mathematically in such a way that lets us systematically interrogate different ways of playing.",
+      "In this session, we will explore how to encode games mathematically, and how we can use this to develop strategies to maximise your chances of winning."
+    ]
+  },
+  {
+    "title": "Irreducible diagrams in the Jones monoid",
+    "class": "invited",
+    "type": "Seminar",
+    "event": "Heilbronn Semigroup Seminar",
+    "date": "2026-01-30",
+    "location": "University of Manchester",
+    "abstract": [
+      "Over the past decade, significant advancements have been made in the theory of diagram monoids. For example, one particular project in the 2010s sought to classify and enumerate the idempotents of various families of diagram monoids.",
+      "In this talk, we aim to expand on this work by providing further insight into the idempotent structure of the Jones monoid (also known as the planar Brauer monoid and the Temperley-Lieb monoid). In particular, I will introduce the notation of irreducibility in the context of planar diagrams, and explore the structure of irreducible idempotent elements.",
+      "No prior knowledge of diagram monoids will be assumed, and there will be lots of pictures throughout!"
+    ]
+  },
+  {
+    "title": "Infinitely presented finite semigroups",
+    "class": "other",
+    "type": "Seminar",
+    "event": "Centre for Interdisciplinary Research in Computational Algebra Seminar",
+    "date": "2025-03-27",
+    "location": "University of St Andrews",
+    "abstract": [
+      "One way to obtain normal forms for elements of a finitely presented monoid is to identify words with combinatorial objects. Perhaps the most well-known example of this appears in the Plactic monoid, where words are identified with Young tableaux according to the Robinson-Schensted insertion algorithm.",
+      "In this talk, I will define a monoid due to Hivert, Novelli and Thibon that relates to binary search tree insertion — the Sylvester monoid — and discuss the properties of some of its quotients. With this established, I will highlight similarities with other plactic-like monoids."
+    ]
+  },
+  {
+    "title": "Finite presentations for quotients of plactic-like monoids",
+    "class": "invited",
+    "type": "Seminar",
+    "event": "North British Semigroups and Applications Network Meeting",
+    "date": "2025-06-13",
+    "location": "University of St Andrews",
+    "abstract": [
+      "One way to obtain normal forms for elements of a finitely presented monoid is to identify words with combinatorial objects. Perhaps the most well-known example of this appears in the Plactic monoid, where words are identified with Young tableaux according to the Robinson-Schensted insertion algorithm.",
+      "In this talk, I will define a monoid due to Hivert, Novelli and Thibon that relates to binary search tree insertion — the Sylvester monoid — and discuss the properties of some of its quotients. With this established, I will highlight similarities with other plactic-like monoids."
+    ]
+  },
+  {
+    "title": "Solving the Word Problem: Modern Data Structures for the Knuth-Bendix Procedure",
+    "class": "other",
+    "type": "Seminar",
+    "event": "Algebra and Combinatorics Seminar",
+    "date": "2024-03-21",
+    "location": "University of St Andrews",
+    "abstract": [
+      "In 1970, Knuth and Bendix devised an algorithm for \"term rewriting systems\" that can decide when two terms composed of variables and operators are equal, given a set of rewriting rules. Fifteen years later,  Kapur and Narendran applied this algorithm to string rewriting systems, proving several results regarding the existence, uniqueness, and usefulness of such systems.",
+      "In this talk, we discuss how string rewriting systems can sometimes be used to solve the word problem for semigroups, and investigate how the classical Knuth-Bendix algorithm can be improved by taking advantage of modern data structures."
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+@import "variables";
+
+/* Organizational tags */
+
+@mixin talk_dark {
+  details {
+    border: 1px solid $fg-color-dark;
+  }
+  details[open] > summary {
+    border-bottom: 1px solid $fg-color-dark;
+    background: $alt-bg-color-dark;
+  }
+}
+
+body.colorscheme-dark {
+  @include talk_dark();
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include talk_dark();
+  }
+}

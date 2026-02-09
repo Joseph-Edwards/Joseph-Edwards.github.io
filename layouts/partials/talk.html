@@ -1,0 +1,15 @@
+<div class="talk">
+  <dt>"{{ .title }}"</dt>
+  <dd>
+    <div>{{ .type }}: <em>{{ .event }}</em></div>
+    <div>{{ .location }}, {{ .date }}</div>
+    <div>
+      <details>
+        <summary>Abstract</summary>
+        {{ range .abstract }}
+        <p>{{ . }}</p>
+        {{ end }}
+      </details>
+    </div>
+  </dd>
+</div>

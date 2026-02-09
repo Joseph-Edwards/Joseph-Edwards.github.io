@@ -1,0 +1,29 @@
+{{ define "title" }} {{ title (i18n (lower .Title)) | default .Title }} · {{
+.Site.Title }} {{ end }} {{ define "content" }}
+<section class="container list">
+  <header>
+    <h1 class="title">
+      <a class="title-link" href="{{ .Permalink | safeURL }}">
+        {{ title (i18n (lower .Title)) | default .Title }}
+      </a>
+    </h1>
+  </header>
+  {{ .Content }}
+  <h2>Invited talks</h2>
+  <div>
+    <dl>
+      {{ range sort (where .Site.Data.talks "class" "invited") "date" "desc" }}
+        {{ partial "talk.html" . }}
+      {{ end }}
+    </dl>
+  </div>
+  <h2>Research talks</h2>
+  <div>
+    <dl>
+      {{ range sort (where .Site.Data.talks "class" "other") "date" "desc" }}
+        {{ partial "talk.html" . }}
+      {{ end }}
+    </dl>
+  </div>
+</section>
+{{ end }}

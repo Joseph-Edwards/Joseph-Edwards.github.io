@@ -12,20 +12,46 @@
   </header>
   {{ .Content }}
   <h2>Invited talks</h2>
-  <div>
-    <dl>
+  <div class="talks">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
       {{ range sort (where .Site.Data.talks "class" "invited") "date" "desc" }}
         {{ partial "talk.html" . }}
       {{ end }}
-    </dl>
+    </table>
   </div>
   <h2>Research talks</h2>
-  <div>
-    <dl>
+  <div class="talks">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      {{ range sort (where .Site.Data.talks "class" "research") "date" "desc" }}
+        {{ partial "talk.html" . }}
+      {{ end }}
+    </table>
+  </div>
+  <h2>Other talks</h2>
+  <div class="talks">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
       {{ range sort (where .Site.Data.talks "class" "other") "date" "desc" }}
         {{ partial "talk.html" . }}
       {{ end }}
-    </dl>
+    </table>
   </div>
 </section>
 {{ end }}

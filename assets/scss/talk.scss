@@ -1,39 +1,28 @@
 @import "variables";
 
-/* Organizational tags */
+.talks {
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
 
-.talk {
-  &:not(:last-child) {
-    margin: 0 0 4rem;
+  td,
+  th {
+    background-color: $bg-color;
+    text-align: left;
+    vertical-align: text-top;
+    border: none;
   }
-}
-dt {
-  font-weight: bold;
-}
-dd {
-  margin: 1rem 0;
-  padding: 0 2.5rem;
-}
-details {
-  display: block;
-  margin: 0.5rem 0;
-  padding: 1rem;
-  border: 1px solid $fg-color;
-}
-details > * {
-  margin: 0;
-}
-details p {
-  &:not(:last-child) {
-    margin: 0 0 2rem;
+
+  th {
+    border-bottom: 0.2rem solid $fg-color;
   }
-}
-summary {
-  cursor: pointer;
-}
-details[open] > summary {
-  padding: 1rem;
-  border-bottom: 1px solid $fg-color;
-  background: $alt-bg-color;
-  margin: -1rem -1rem 1rem;
+
+  th:nth-child(1) {
+    width: 15%;
+  }
+
+  td {
+    border-bottom: 0.1rem solid $fg-color;
+  }
 }

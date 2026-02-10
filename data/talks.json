@@ -1,5 +1,5 @@
 [
-    {
+  {
     "title": "Irreducible diagrams in the Jones monoid",
     "class": "invited",
     "type": "Seminar",
@@ -14,7 +14,7 @@
   },
   {
     "title": "The Mathematics of Games",
-    "class": "invited",
+    "class": "other",
     "type": "Lecture",
     "event": "Summer Academic Experience Course",
     "date": "2025-07-15",
@@ -24,7 +24,7 @@
       "In this session, we will explore how to encode games mathematically, and how we can use this to develop strategies to maximise your chances of winning."
     ]
   },
-    {
+  {
     "title": "Finite presentations for quotients of plactic-like monoids",
     "class": "invited",
     "type": "Seminar",
@@ -38,7 +38,7 @@
   },
   {
     "title": "Infinitely presented finite semigroups",
-    "class": "other",
+    "class": "research",
     "type": "Seminar",
     "event": "Centre for Interdisciplinary Research in Computational Algebra Seminar",
     "date": "2025-03-27",
@@ -50,7 +50,7 @@
   },
   {
     "title": "Solving the Word Problem: Modern Data Structures for the Knuth-Bendix Procedure",
-    "class": "other",
+    "class": "research",
     "type": "Seminar",
     "event": "Algebra and Combinatorics Seminar",
     "date": "2024-03-21",

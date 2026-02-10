@@ -3,12 +3,29 @@
 /* Organizational tags */
 
 @mixin talk_dark {
-  details {
-    border: 1px solid $fg-color-dark;
-  }
-  details[open] > summary {
-    border-bottom: 1px solid $fg-color-dark;
-    background: $alt-bg-color-dark;
+  .talks {
+    td,
+    th {
+      border: 0;
+      background-color: $bg-color-dark;
+    }
+
+    th {
+      border-bottom: 0.2rem solid $fg-color-dark;
+    }
+
+    td {
+      border-bottom: 0.1rem solid $fg-color-dark;
+    }
+
+    details {
+      border: 1px solid $fg-color-dark;
+    }
+
+    details[open] > summary {
+      border-bottom: 1px solid $fg-color-dark;
+      background: $alt-bg-color-dark;
+    }
   }
 }
 

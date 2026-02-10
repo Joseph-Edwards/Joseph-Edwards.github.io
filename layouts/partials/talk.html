@@ -1,15 +1,20 @@
-<div class="talk">
-  <dt>"{{ .title }}"</dt>
-  <dd>
-    <div>{{ .type }}: <em>{{ .event }}</em></div>
-    <div>{{ .location }}, {{ .date }}</div>
+<tr>
+  <td>{{ .date }}</td>
+  <td>
+    <strong>{{ .title }}</strong> ({{ .type }})
     <div>
-      <details>
-        <summary>Abstract</summary>
-        {{ range .abstract }}
-        <p>{{ . }}</p>
-        {{ end }}
-      </details>
+      <i class="fa fa-solid fa-users"></i>
+      {{ .event }}
     </div>
-  </dd>
-</div>
+    <div>
+      <i class="fa fa-solid fa-university"></i>
+      {{ .location }}
+    </div>
+    <details>
+      <summary>Abstract</summary>
+      {{ range .abstract }}
+      <p>{{ . }}</p>
+      {{ end }}
+    </details>
+  </td>
+</tr>

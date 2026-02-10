@@ -14,8 +14,10 @@
   <h2>Preprint</h2>
   <div>
     <dl>
-      {{ range sort (where .Site.Data.papers "class" "Preprint") "date" "desc"}}
-        {{ partial "paper.html" . }}
+      {{ $num_papers := .Site.Data.papers | len }}
+      {{ range $index, $paper := sort (where .Site.Data.papers "class" "Preprint") "date" "desc"}}
+        {{ $context := dict "index" (sub $num_papers $index) "paper" $paper }}
+        {{ partial "paper.html" $context }}
       {{ end }}
     </dl>
   </div>

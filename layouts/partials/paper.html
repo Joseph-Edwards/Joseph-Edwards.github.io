@@ -1,5 +1,5 @@
 {{ $formatted_coauthors := slice }}
-{{ range .coauthors }}
+{{ range  .paper.coauthors }}
   {{ $coauthor := "" }}
   {{ if .url  }}
     {{ $coauthor = printf "<a target=\"_blank\" href=\"%s\">%s</a>" .url .name }}
@@ -10,14 +10,14 @@
 {{ end }}
 
 <div class="paper">
-  <dt>"{{ .title }}"</dt>
+  <dt>[{{ .index }}] "{{  .paper.title }}"</dt>
   <dd>
-    <div>With {{ delimit $formatted_coauthors ", " " and " | safeHTML }}.</div>
-    <div>Preprint: <a target="_blank" href="{{ .resource.url | safeURL}}">{{ .resource.title }}</a></div>
+    <div>With {{ delimit $formatted_coauthors ", " " and " | safeHTML }}. ({{ .paper.date }})</div>
+    <div>Preprint: <a target="_blank" href="{{  .paper.resource.url | safeURL}}">{{  .paper.resource.title }}</a></div>
     <div>
       <details>
         <summary>Abstract</summary>
-        {{ range .abstract }}
+        {{ range  .paper.abstract }}
         <p>{{ . }}</p>
         {{ end }}
       </details>

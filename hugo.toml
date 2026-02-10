@@ -27,18 +27,13 @@ keywords    = "mathematician,developer,semigroups"
 since       = 2025
 # Git Commit in Footer, uncomment the line below to enable it
 # commit = "https://github.com/luizdepra/hugo-coder/tree/"
-colorScheme = "auto"
-customCSS = []
-customJS = []
-customRemoteJS = []
-customSCSS = [
-    "scss/project.scss",
-    "scss/project_dark.scss",
-    "scss/talk.scss",
-    "scss/talk_dark.scss",
-]
+colorScheme           = "auto"
+customCSS             = []
+customJS              = []
+customRemoteJS        = []
+customSCSS            = ["scss/custom.scss", "scss/custom_dark.scss"]
 hideColorSchemeToggle = false
-maxSeeAlsoItems = 5
+maxSeeAlsoItems       = 5
 
 # [taxonomies]
 # author   = "authors"

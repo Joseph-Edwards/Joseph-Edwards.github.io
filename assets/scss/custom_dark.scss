@@ -1,0 +1,54 @@
+@import "variables";
+
+@mixin custom_dark {
+  //////////////////////////////////////////////////////////////////////
+  // Details
+  //////////////////////////////////////////////////////////////////////
+
+  details {
+    border: 1px solid $fg-color-dark;
+  }
+
+  details[open] > summary {
+    border-bottom: 1px solid $fg-color-dark;
+    background: $alt-bg-color-dark;
+  }
+
+  //////////////////////////////////////////////////////////////////////
+  // Talks
+  //////////////////////////////////////////////////////////////////////
+
+  .talks {
+    td,
+    th {
+      background-color: $bg-color-dark;
+      border: 0;
+    }
+
+    th {
+      border-bottom: 0.2rem solid $fg-color-dark;
+    }
+
+    td {
+      border-bottom: 0.1rem solid $fg-color-dark;
+    }
+  }
+
+  //////////////////////////////////////////////////////////////////////
+  // Projects
+  //////////////////////////////////////////////////////////////////////
+
+  .project-card {
+    background-color: $alt-bg-color-dark;
+  }
+}
+
+body.colorscheme-dark {
+  @include custom_dark();
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include custom_dark();
+  }
+}

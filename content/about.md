@@ -13,7 +13,7 @@ focusing on efficient implementations of the Knuth Bendix string rewriting
 procedure for semigroups and monoids.
 
 I began my studies in September 2023, and work under the supervision of
-[professor James Mitchell](https://jdbm.me/).
+[Professor James Mitchell](https://jdbm.me/).
 
 On top of my maths research, I also enjoy contributing to open-source software projects. To see a selection of the projects I have contributed to, see my [software page](/software). Alternatively, for a deeper dive, see my [GitHub profile](https://github.com/Joseph-Edwards).
 

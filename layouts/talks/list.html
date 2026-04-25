@@ -20,7 +20,7 @@
           <th>Title</th>
         </tr>
       </thead>
-      {{ range sort (where .Site.Data.talks "class" "invited") "date" "desc" }}
+      {{ range sort (where hugo.Data.talks "class" "invited") "date" "desc" }}
         {{ partial "talk.html" . }}
       {{ end }}
     </table>
@@ -34,7 +34,7 @@
           <th>Title</th>
         </tr>
       </thead>
-      {{ range sort (where .Site.Data.talks "class" "research") "date" "desc" }}
+      {{ range sort (where hugo.Data.talks "class" "research") "date" "desc" }}
         {{ partial "talk.html" . }}
       {{ end }}
     </table>
@@ -48,7 +48,7 @@
           <th>Title</th>
         </tr>
       </thead>
-      {{ range sort (where .Site.Data.talks "class" "other") "date" "desc" }}
+      {{ range sort (where hugo.Data.talks "class" "other") "date" "desc" }}
         {{ partial "talk.html" . }}
       {{ end }}
     </table>

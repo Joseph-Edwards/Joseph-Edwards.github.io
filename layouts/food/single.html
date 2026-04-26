@@ -22,12 +22,18 @@
             </span>
           </div>
           {{ with .GetTerms "tags" }}{{ partial "taxonomy/tags.html" . }}{{ end }}
+          <a href="/food"><i class="fa-solid fa-arrow-left"></i> Back to all meals</a>
         </div>
       </header>
 
       <div class="post-content">
         {{ if .Params.featuredImage }}
-          <img src="{{ .Params.featuredImage | relURL }}" alt="{{ .Description }}"/>
+        <figure>
+          <img src="{{ .Params.featuredImage | relURL }}" alt="A picture of {{ lower .Description }}">
+          <figcaption>
+            <p>{{ .Description }}</p>
+          </figcaption>
+        </figure>
         {{ end }}
         {{ .Content }}
       </div>

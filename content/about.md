@@ -4,18 +4,24 @@ description = "About me"
 aliases = ["about-me", "joseph-edwards", "contact"]
 +++
 
-My name is Joe, and I'm a PhD student studying mathematics at the [University of
-St Andrews](https://www.st-andrews.ac.uk/). I'm a member of both the [Algebra and Combinatorics group](https://algebra-combinatorics.wp.st-andrews.ac.uk/), and the
-[Centre for Interdisciplinary Research in Computational Algebra (CIRCA)](https://circa.st-andrews.ac.uk/).
+My name is Joe, and I'm a PhD student studying mathematics at the [University of St
+Andrews](https://www.st-andrews.ac.uk/). I'm a member of both the [Algebra and Combinatorics
+group](https://algebra-combinatorics.wp.st-andrews.ac.uk/), and the [Centre for Interdisciplinary
+Research in Computational Algebra (CIRCA)](https://circa.st-andrews.ac.uk/).
 
-My main area of research is in computational semigroup theory, specifically
-focusing on efficient implementations of the Knuth Bendix string rewriting
-procedure for semigroups and monoids.
+My main area of research is in computational semigroup theory, specifically focusing on efficient
+implementations of the Knuth Bendix string rewriting procedure for semigroups and monoids.
 
-I began my studies in September 2023, and work under the supervision of
-[Professor James Mitchell](https://jdbm.me/).
+I began my studies in September 2023, and work under the supervision of [Professor James
+Mitchell](https://jdbm.me/).
 
-On top of my maths research, I also enjoy contributing to open-source software projects. To see a selection of the projects I have contributed to, see my [software page](/software). Alternatively, for a deeper dive, see my [GitHub profile](https://github.com/Joseph-Edwards).
+On top of my maths research, I also enjoy contributing to open-source software projects. To see a
+selection of the projects I have contributed to, see my [software page](/software). Alternatively,
+for a deeper dive, see my [GitHub profile](https://github.com/Joseph-Edwards).
+
+When I'm not working, you might find me hiking, on the football pitch, or cheffing up a storm in the
+kitchen. If you'd like to see some of the things I've cooked recently, then please take a look at my
+[food page](/food).
 
 # Contact
 

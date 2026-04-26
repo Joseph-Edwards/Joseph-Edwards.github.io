@@ -1,0 +1,8 @@
+    <li>
+      <span class="date">{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
+      <div class="content">
+        <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
+        <p class="description">{{ .Description }}</p>
+        <span class="rating">{{ .Params.rating }} / 10</span>
+      </div>
+    </li>

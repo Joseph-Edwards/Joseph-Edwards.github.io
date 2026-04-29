@@ -1,7 +1,7 @@
 baseURL                = "https://www.joseph-edwards.github.io"
 defaultContentLanguage = "en"
 enableEmoji            = true
-languageCode           = "en"
+locale                 = "en"
 theme                  = "coder"
 title                  = "Joseph Edwards"
 

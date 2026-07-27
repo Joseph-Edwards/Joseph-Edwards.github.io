@@ -1,4 +1,16 @@
 [
+    {
+    "title": "Apples, Bananas, and Questions That Cannot Be Answered",
+    "class": "other",
+    "type": "Lecture",
+    "event": "Summer Academic Experience Course",
+    "date": "2026-07-16",
+    "location": "University of St Andrews",
+    "abstract": [
+      "For many people, a large part of mathematics is problem solving; maths gives us the tools to take a question, perform a sequence of steps, and arrive at an answer. But is it always possible to do this? For every question, is there always a procedure that can be followed (an algorithm) that produces the correct answer? Perhaps surprisingly, the answer is no.",
+      "In this session, we will introduce algorithms as the formalisation of the idea of problem solving, and discuss the problems that can and cannot be solved by algorithms."
+    ]
+  },
   {
     "title": "Irreducible diagrams in the Jones monoid",
     "class": "invited",

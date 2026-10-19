@@ -91,5 +91,6 @@ name   = "Teaching"
 url    = "teaching/"
 weight = 5
 
+[caches]
 [caches.images]
 dir = ':cacheDir/images'

@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables";
 
 @mixin custom_dark {
   //////////////////////////////////////////////////////////////////////
@@ -6,12 +6,12 @@
   //////////////////////////////////////////////////////////////////////
 
   details {
-    border: 1px solid $fg-color-dark;
+    border: 1px solid variables.$fg-color-dark;
   }
 
   details[open] > summary {
-    border-bottom: 1px solid $fg-color-dark;
-    background: $alt-bg-color-dark;
+    border-bottom: 1px solid variables.$fg-color-dark;
+    background: variables.$alt-bg-color-dark;
   }
 
   //////////////////////////////////////////////////////////////////////
@@ -21,16 +21,16 @@
   .talks {
     td,
     th {
-      background-color: $bg-color-dark;
+      background-color: variables.$bg-color-dark;
       border: 0;
     }
 
     th {
-      border-bottom: 0.2rem solid $fg-color-dark;
+      border-bottom: 0.2rem solid variables.$fg-color-dark;
     }
 
     td {
-      border-bottom: 0.1rem solid $fg-color-dark;
+      border-bottom: 0.1rem solid variables.$fg-color-dark;
     }
   }
 
@@ -39,7 +39,7 @@
   //////////////////////////////////////////////////////////////////////
 
   .project-card {
-    background-color: $alt-bg-color-dark;
+    background-color: variables.$alt-bg-color-dark;
   }
 }
 

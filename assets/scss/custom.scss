@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables";
 
 //////////////////////////////////////////////////////////////////////
 // Details
@@ -8,7 +8,7 @@ details {
   display: block;
   margin: 0.5rem 0;
   padding: 1rem;
-  border: 1px solid $fg-color;
+  border: 1px solid variables.$fg-color;
 }
 
 details > * {
@@ -28,8 +28,8 @@ summary {
 
 details[open] > summary {
   padding: 1rem;
-  border-bottom: 1px solid $fg-color;
-  background: $alt-bg-color;
+  border-bottom: 1px solid variables.$fg-color;
+  background: variables.$alt-bg-color;
   margin: -1rem -1rem 1rem;
 }
 
@@ -45,14 +45,14 @@ details[open] > summary {
 
   td,
   th {
-    background-color: $bg-color;
+    background-color: variables.$bg-color;
     text-align: left;
     vertical-align: text-top;
     border: none;
   }
 
   th {
-    border-bottom: 0.2rem solid $fg-color;
+    border-bottom: 0.2rem solid variables.$fg-color;
   }
 
   th:nth-child(1) {
@@ -60,7 +60,7 @@ details[open] > summary {
   }
 
   td {
-    border-bottom: 0.1rem solid $fg-color;
+    border-bottom: 0.1rem solid variables.$fg-color;
   }
 }
 
@@ -90,7 +90,7 @@ details[open] > summary {
 
 /* Each card uses the parent's row tracks */
 .project-card {
-  background-color: $alt-bg-color;
+  background-color: variables.$alt-bg-color;
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 4;

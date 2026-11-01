@@ -1,177 +1,214 @@
 [
   {
-    "name": "gap",
-    "org": "gap-system",
-    "description": "Main development repository for GAP - Groups, Algorithms, Programming, a System for Computational Discrete Algebra",
-    "stars": 938,
-    "forks": 180,
+    "name": "uv",
+    "org": "astral-sh",
+    "description": "An extremely fast Python package and project manager, written in Rust.",
+    "stars": 91428,
+    "forks": 3740,
     "languages": [
       {
-        "name": "GAP",
-        "percent": 78.81959756645242
+        "name": "Rust",
+        "percent": 97.98086067851887
       },
       {
-        "name": "C",
-        "percent": 17.128924746809467
-      },
-      {
-        "name": "C++",
-        "percent": 2.222192020054875
-      },
-      {
-        "name": "TeX",
-        "percent": 0.5071539993014557
-      },
-      {
-        "name": "M4",
-        "percent": 0.41847884638212013
+        "name": "Python",
+        "percent": 1.6986147814508876
       },
       {
         "name": "Shell",
-        "percent": 0.3105180200237985
-      },
-      {
-        "name": "Perl",
-        "percent": 0.3077600852686664
-      },
-      {
-        "name": "Python",
-        "percent": 0.15258850258329867
-      },
-      {
-        "name": "Vim Script",
-        "percent": 0.062693341061909
+        "percent": 0.19160558667265
       }
     ],
-    "url": "https://github.com/gap-system/gap"
+    "url": "https://github.com/astral-sh/uv"
   },
   {
-    "name": "Semigroups.jl",
-    "org": "libsemigroups",
-    "description": "Julia bindings for the libsemigroups C++ library for semigroups and monoids",
-    "stars": 4,
-    "forks": 3,
-    "languages": [
-      {
-        "name": "Julia",
-        "percent": 64.0851309707242
-      },
-      {
-        "name": "Python",
-        "percent": 34.63212634822804
-      },
-      {
-        "name": "Makefile",
-        "percent": 1.2827426810477658
-      }
-    ],
-    "url": "https://github.com/libsemigroups/Semigroups.jl"
-  },
-  {
-    "name": "HPCombi",
-    "org": "libsemigroups",
-    "description": "Fast combinatorics in C++ using SSE/AVX instruction sets",
-    "stars": 19,
-    "forks": 8,
+    "name": "Catch2",
+    "org": "catchorg",
+    "description": "A modern, C++-native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later (C++11 support is in v2.x branch, and C++03 on the Catch1.x branch)",
+    "stars": 21540,
+    "forks": 3437,
     "languages": [
       {
         "name": "C++",
-        "percent": 82.11523588553752
-      },
-      {
-        "name": "Python",
-        "percent": 8.973923301069473
+        "percent": 89.14241604085203
       },
       {
         "name": "CMake",
-        "percent": 8.469654003296695
+        "percent": 6.179769552863618
+      },
+      {
+        "name": "Python",
+        "percent": 3.584254500257693
+      },
+      {
+        "name": "Meson",
+        "percent": 0.6063930941506106
+      },
+      {
+        "name": "Starlark",
+        "percent": 0.2985426108154847
+      },
+      {
+        "name": "Batchfile",
+        "percent": 0.08212635223160356
       },
       {
         "name": "Shell",
-        "percent": 0.4411868100963229
+        "percent": 0.07285136972086578
       }
     ],
-    "url": "https://github.com/libsemigroups/HPCombi"
+    "url": "https://github.com/catchorg/Catch2"
   },
   {
     "name": "docs",
     "org": "github",
     "description": "The open-source repo for docs.github.com",
-    "stars": 18903,
-    "forks": 65919,
+    "stars": 21196,
+    "forks": 69360,
     "languages": [
       {
         "name": "TypeScript",
-        "percent": 97.6806857073212
+        "percent": 96.18208954911448
       },
       {
         "name": "SCSS",
-        "percent": 1.5561941100961076
+        "percent": 3.2941852071647943
       },
       {
         "name": "Shell",
-        "percent": 0.3282871470667445
+        "percent": 0.22804716754358328
       },
       {
         "name": "JavaScript",
-        "percent": 0.1685666039579242
+        "percent": 0.13226142616962047
       },
       {
         "name": "Dockerfile",
-        "percent": 0.15485520964181318
+        "percent": 0.08573792002422641
       },
       {
         "name": "HTML",
-        "percent": 0.11141122191621404
+        "percent": 0.077678729983292
       }
     ],
     "url": "https://github.com/github/docs"
   },
   {
-    "name": "run-pkg-tests",
-    "org": "gap-actions",
-    "description": null,
-    "stars": 1,
-    "forks": 5,
-    "languages": [],
-    "url": "https://github.com/gap-actions/run-pkg-tests"
+    "name": "gap",
+    "org": "gap-system",
+    "description": "Main development repository for GAP - Groups, Algorithms, Programming, a System for Computational Discrete Algebra",
+    "stars": 1019,
+    "forks": 190,
+    "languages": [
+      {
+        "name": "GAP",
+        "percent": 78.67089630575464
+      },
+      {
+        "name": "C",
+        "percent": 16.843818491490623
+      },
+      {
+        "name": "C++",
+        "percent": 2.16019458227691
+      },
+      {
+        "name": "Python",
+        "percent": 0.6977674274152198
+      },
+      {
+        "name": "M4",
+        "percent": 0.4068665829961638
+      },
+      {
+        "name": "Shell",
+        "percent": 0.3485045889951547
+      },
+      {
+        "name": "Perl",
+        "percent": 0.2995975010884361
+      },
+      {
+        "name": "TeX",
+        "percent": 0.2697781818679815
+      },
+      {
+        "name": "JavaScript",
+        "percent": 0.14381593046450436
+      },
+      {
+        "name": "HTML",
+        "percent": 0.07935699210809356
+      },
+      {
+        "name": "Vim Script",
+        "percent": 0.06103134146625477
+      }
+    ],
+    "url": "https://github.com/gap-system/gap"
   },
   {
     "name": "edge-addition-planarity-suite",
     "org": "graph-algorithms",
     "description": null,
-    "stars": 37,
-    "forks": 16,
+    "stars": 41,
+    "forks": 29,
     "languages": [
       {
         "name": "C",
-        "percent": 75.05677550910808
+        "percent": 84.09540380297098
       },
       {
         "name": "Python",
-        "percent": 22.801825604188245
+        "percent": 14.057129329201102
       },
       {
         "name": "M4",
-        "percent": 1.1879120852295797
+        "percent": 0.8603355373799314
       },
       {
         "name": "Makefile",
-        "percent": 0.43581458514210764
+        "percent": 0.38705820217809894
+      },
+      {
+        "name": "TeX",
+        "percent": 0.27430624694985395
       },
       {
         "name": "Roff",
-        "percent": 0.3268609388565807
+        "percent": 0.20814973941157322
       },
       {
         "name": "Batchfile",
-        "percent": 0.11163883697068179
-      },
-      {
-        "name": "Shell",
-        "percent": 0.0776264216253866
+        "percent": 0.06881480541510325
       }
     ],
     "url": "https://github.com/graph-algorithms/edge-addition-planarity-suite"
+  },
+  {
+    "name": "HPCombi",
+    "org": "libsemigroups",
+    "description": "Fast combinatorics in C++ using SSE/AVX instruction sets",
+    "stars": 22,
+    "forks": 8,
+    "languages": [
+      {
+        "name": "C++",
+        "percent": 82.01506628071188
+      },
+      {
+        "name": "Python",
+        "percent": 8.96272051308059
+      },
+      {
+        "name": "CMake",
+        "percent": 8.581577161047695
+      },
+      {
+        "name": "Shell",
+        "percent": 0.4406360451598305
+      }
+    ],
+    "url": "https://github.com/libsemigroups/HPCombi"
   }
 ]

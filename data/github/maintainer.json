@@ -3,28 +3,28 @@
     "name": "Semigroups",
     "org": "semigroups",
     "description": "The GAP package Semigroups",
-    "stars": 29,
-    "forks": 38,
+    "stars": 33,
+    "forks": 45,
     "languages": [
       {
         "name": "GAP",
-        "percent": 93.35076513119714
+        "percent": 93.02383451120531
       },
       {
         "name": "C++",
-        "percent": 4.909518433717541
+        "percent": 5.342762824163631
       },
       {
         "name": "M4",
-        "percent": 1.3941018279773998
+        "percent": 1.317367046694837
       },
       {
         "name": "Python",
-        "percent": 0.2066022253243032
+        "percent": 0.2302537460346244
       },
       {
         "name": "Shell",
-        "percent": 0.11301908264179836
+        "percent": 0.059884433359158384
       }
     ],
     "url": "https://github.com/semigroups/Semigroups"
@@ -33,36 +33,36 @@
     "name": "Digraphs",
     "org": "digraphs",
     "description": "The GAP package Digraphs",
-    "stars": 44,
-    "forks": 61,
+    "stars": 47,
+    "forks": 71,
     "languages": [
       {
         "name": "GAP",
-        "percent": 84.05077891015313
+        "percent": 84.55349267859599
       },
       {
         "name": "C",
-        "percent": 11.536829719733614
+        "percent": 11.12188662831976
       },
       {
         "name": "M4",
-        "percent": 1.6179062668309232
+        "percent": 1.5600510117464088
       },
       {
         "name": "Gnuplot",
-        "percent": 1.306416557887688
+        "percent": 1.2593020958804029
       },
       {
         "name": "Jupyter Notebook",
-        "percent": 0.9833557706918994
+        "percent": 0.9478921371225129
       },
       {
         "name": "Python",
-        "percent": 0.2857916917799339
+        "percent": 0.3359124396900772
       },
       {
         "name": "Makefile",
-        "percent": 0.17412381611372557
+        "percent": 0.1782813055029347
       }
     ],
     "url": "https://github.com/digraphs/Digraphs"

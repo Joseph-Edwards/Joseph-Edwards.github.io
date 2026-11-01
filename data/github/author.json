@@ -3,32 +3,32 @@
     "name": "libsemigroups",
     "org": "libsemigroups",
     "description": "C++ library for semigroups and monoids",
-    "stars": 64,
-    "forks": 34,
+    "stars": 72,
+    "forks": 37,
     "languages": [
       {
         "name": "C++",
-        "percent": 95.48200051599846
-      },
-      {
-        "name": "M4",
-        "percent": 1.3475540084951099
+        "percent": 95.2060275673421
       },
       {
         "name": "Python",
-        "percent": 1.3066079968361504
+        "percent": 1.6108503128665168
       },
       {
         "name": "Makefile",
-        "percent": 1.1505055685625833
+        "percent": 1.3381543637888795
       },
       {
-        "name": "Shell",
-        "percent": 0.35807741849850416
+        "name": "M4",
+        "percent": 1.08886488729678
       },
       {
         "name": "GAP",
-        "percent": 0.3418591606488335
+        "percent": 0.4304893133637463
+      },
+      {
+        "name": "Shell",
+        "percent": 0.3152071641519118
       }
     ],
     "url": "https://github.com/libsemigroups/libsemigroups"
@@ -37,28 +37,28 @@
     "name": "libsemigroups_pybind11",
     "org": "libsemigroups",
     "description": "Python bindings for the libsemigroups C++ library for semigroups and monoids",
-    "stars": 9,
-    "forks": 10,
+    "stars": 11,
+    "forks": 11,
     "languages": [
       {
         "name": "C++",
-        "percent": 64.39062016107796
+        "percent": 62.90569900559873
       },
       {
         "name": "Python",
-        "percent": 34.935850179086394
+        "percent": 36.53604704604329
       },
       {
         "name": "Shell",
-        "percent": 0.509605894044468
+        "percent": 0.4133763683462856
       },
       {
         "name": "Vim Script",
-        "percent": 0.0979293196262332
+        "percent": 0.08758460767109551
       },
       {
         "name": "Makefile",
-        "percent": 0.06599444616495007
+        "percent": 0.05729297234060333
       }
     ],
     "url": "https://github.com/libsemigroups/libsemigroups_pybind11"

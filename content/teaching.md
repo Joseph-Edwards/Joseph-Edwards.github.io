@@ -3,13 +3,16 @@ title = "Teaching"
 slug = "teaching"
 +++
 
-On this page, you will find information a chronological record of the teaching
-activities I have undertaken, grouped by academic year.
+On this page, you will find a chronological record of the teaching activities I
+have undertaken, grouped by academic year. This teaching has taken place
+at the University of St Andrews unless otherwise specified.
 
 ## 2026/2027
 
+- Co-presenter for [Using AI for Efficient Coding](https://www.kehubmaths.org.uk/events-activities/training/item/using-ai-efficient-coding-4/)
+  (for the [UK Knowledge Exchange Hub for Mathematical Sciences](https://www.kehubmaths.org.uk/)).
 - Teaching assistant for the [Mathematical Software](https://www.st-andrews.ac.uk/education/vip/projects/mathematical-software/) Vertically Integrated Project.
-- Small group tutor for [Linear Mathematics](https://www.st-andrews.ac.uk/subjects/modules/catalogue/?meta_modulecode=MT2501)
+- Small group tutor for [Linear Mathematics](https://www.st-andrews.ac.uk/subjects/modules/catalogue/?meta_modulecode=MT2501).
 
 ## 2025/2026
 

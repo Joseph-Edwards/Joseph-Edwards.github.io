@@ -12,12 +12,12 @@ MAINTAINER_REPOS = [
 ]
 
 CONTRIBUTOR_REPOS = [
-    "gap-system/gap",
-    "libsemigroups/Semigroups.jl",
-    "libsemigroups/HPCombi",
+    "astral-sh/uv",
+    "catchorg/Catch2",
     "github/docs",
-    "gap-actions/run-pkg-tests",
+    "gap-system/gap",
     "graph-algorithms/edge-addition-planarity-suite",
+    "libsemigroups/HPCombi",
 ]
 
 
